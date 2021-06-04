@@ -1,0 +1,10 @@
+img {
+    max-width: 25%;
+    height: auto;
+    border: 2px inset var(--background);
+    border-radius: 50px;
+}
+
+.jumbotron {
+    background-image: url("../images/flower.jpeg");
+}
