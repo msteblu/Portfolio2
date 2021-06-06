@@ -1,11 +1,14 @@
+/* Variables */
 :root {
     --rosepink: #FF748C;
 }
 
+/* Universal */
 html {
     font-size: 1rem;
 }
 
+/*  Body */
 body {
     background-image: url("../images/rose.png");
     background-repeat: no-repeat;
@@ -30,7 +33,7 @@ h4 {
     font-family: 'Satisfy', cursive;
 }
 
-
+/* Background */
 .photo {
     max-width: 20%;
     height: auto;
@@ -39,6 +42,7 @@ h4 {
     margin: 1rem;
 }
 
+/* Jumbotron Header */
 .jumbotron {
     height: 100vh;
 }
@@ -51,29 +55,38 @@ h4 {
     margin-bottom: 0px;
 }
 
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--rosepink);
+}
+
+/* My Work - Cards */
 .top-image {
     max-height: 20rem;
     width: auto;
     filter: opacity(75%);
+    filter: grayscale(100%);
 }
 
 .card-image {
     max-height: 10rem;
     width: auto;
-    filter: opacity(75%)
-}
-
-.top-image:hover {
-    filter:opacity(100%);
-}
-
-.card-image:hover {
-    filter:opacity(100%);
+    filter: opacity(75%);
+    filter: grayscale(100%);
 }
 
 .card:hover {
     box-shadow: 0 0 10px pink;
     filter:opacity(100%);
+}
+
+.card:hover .top-image {
+    filter:opacity(100%);
+    filter: grayscale(0%);
+}
+
+.card:hover .card-image {
+    filter:opacity(100%);
+    filter: grayscale(0%);
 }
 
 .card-link {
@@ -85,6 +98,7 @@ h4 {
     color: black;
 }
 
+/* Contact Section */
 .contact {
     padding-bottom: 4rem;
 }
@@ -98,13 +112,28 @@ h4 {
     color: black;
 }
 
+/* Footer */
+footer p {
+    color: gray;
+    font-size: 0.7rem;
+}
 
+
+/* Responsive Design */
 @include media-breakpoint-up(sm) {
     html {
       font-size: 1.2rem;
     }
+    .card-link {
+        font-size: 0.5rem;
+        word-wrap: normal;
+    }
+    .link-contact {
+        font-size: 1rem;
+        word-wrap: normal;
+    }
   }
-  
+
   @include media-breakpoint-up(md) {
     html {
       font-size: 1.4rem;
