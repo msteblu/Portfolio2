@@ -1,10 +1,118 @@
-img {
-    max-width: 25%;
+:root {
+    --rosepink: #FF748C;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-image: url("../images/rose.png");
+    background-repeat: no-repeat;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+hr {
+    margin: 3rem;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+h4 {
+    font-family: 'Satisfy', cursive;
+}
+
+
+.photo {
+    max-width: 20%;
     height: auto;
-    border: 2px inset var(--background);
-    border-radius: 50px;
+    border: 10% inset black;
+    border-radius: 50%;
+    margin: 1rem;
 }
 
 .jumbotron {
-    background-image: url("../images/flower.jpeg");
+    height: 100vh;
 }
+
+.heading {
+    margin-top: 45vh;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.top-image {
+    max-height: 20rem;
+    width: auto;
+    filter: opacity(75%);
+}
+
+.card-image {
+    max-height: 10rem;
+    width: auto;
+    filter: opacity(75%)
+}
+
+.top-image:hover {
+    filter:opacity(100%);
+}
+
+.card-image:hover {
+    filter:opacity(100%);
+}
+
+.card:hover {
+    box-shadow: 0 0 10px pink;
+    filter:opacity(100%);
+}
+
+.card-link {
+    text-decoration: none;
+    color: var(--rosepink);
+}
+
+.card-link:hover {
+    color: black;
+}
+
+.contact {
+    padding-bottom: 4rem;
+}
+
+.link-contact {
+    text-decoration: none;
+    color: var(--rosepink);
+}
+
+.link-contact:hover {
+    color: black;
+}
+
+
+@include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
